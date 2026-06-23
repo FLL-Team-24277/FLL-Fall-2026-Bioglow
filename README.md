@@ -1,17 +1,17 @@
-# FLL Fall 2025 - Unearthed 🏆
+# FLL Fall 2026 - Bioglow 🏆
 
 ![FLL Team 24277](https://img.shields.io/badge/FLL%20Team-24277-orange)
 ![Season](https://img.shields.io/badge/Season-2025%20Unearthed-blue)
-![GitHub last commit](https://img.shields.io/github/last-commit/FLL-Team-24277/FLL-Fall-2025-Unearthed)
-![GitHub contributors](https://img.shields.io/github/contributors/FLL-Team-24277/FLL-Fall-2025-Unearthed)
-![GitHub license](https://img.shields.io/github/license/FLL-Team-24277/FLL-Fall-2025-Unearthed)
+![GitHub last commit](https://img.shields.io/github/last-commit/FLL-Team-24277/FLL-Fall-2026-Bioglow)
+![GitHub contributors](https://img.shields.io/github/contributors/FLL-Team-24277/FLL-Fall-2026-Bioglow)
+![GitHub license](https://img.shields.io/github/license/FLL-Team-24277/FLL-Fall-2026-Bioglow)
 
-# Fall-2025-Unearthed, FLL Team 24277
-Pybricks, VS Code setup, base robot, missions, and materials for the Fall 2025 FLL Season "Unearthed".
+# Fall-2026-Bioglow, FLL Team 24277
+Pybricks, VS Code setup, base robot, missions, and materials for the Fall 2026 FLL Season "Bioglow".
 
 ##  Introduction
 
-We are not "giving away solutions" here. If you are looking for mission solutions, you'll just have to figure them out yourself :) [Read our statement on the FLL "Discovery" core value here.](https://github.com/FLL-Team-24277/FLL-Fall-2025-Unearthed/blob/main/help/github/discovery.md)
+We are not "giving away solutions" here. If you are looking for mission solutions, you'll just have to figure them out yourself :) [Read our statement on the FLL "Discovery" core value here.](https://github.com/FLL-Team-24277/FLL-Fall-2026-Bioglow/blob/main/help/github/discovery.md)
 
 The instructions below will get team members up and running for FLL in a team collaboration environment using [pybricks libraries](https://github.com/pybricks), writing programs with Visual Studio Code, and using git/github for version control. The instructions are not perfect, and you will probably have some troubleshooting and adjustments along the way.
 
@@ -21,11 +21,11 @@ Very helpful page here about how to use pybricks with VS Code: https://pybricks.
 
 Detailed instructions are [here](https://github.com/MrGibbage/fll-pybricks-vscode-tutorial), but this is a quick summary
 
-1. Install [necessary software](https://github.com/FLL-Team-24277/FLL-Fall-2025-Unearthed/blob/main/help/config/Software.md).
+1. Install [necessary software](https://github.com/FLL-Team-24277/FLL-Fall-2026-Bioglow/blob/main/help/config/Software.md).
 2. Each team member creates their own github account. REMINDER: Be sure to use an email account that they can check at school (github emails may be blocked). They will also have to set up two-factor authentication. Also recommend that the team member keep that github page open and logged in while completing these instructions because you will need it for authentication in step 9 below. Remind them to not forget their password or how they use 2FA!
-3. Add each account as a collaborator for this project [here](https://github.com/FLL-Team-24277/FLL-Fall-2025-Unearthed/settings/access). Instructions [here](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository). The team member will need to confirm and accept the invitation. At that point they can push updates to the project.
-4. Clone the season Repository. Clone this repository: [https://github.com/FLL-Team-24277/Fall-2025-Unearthed.git](https://github.com/FLL-Team-24277/FLL-Fall-2025-Unearthed.git) Save it somewhere on their computer.
-5. Add a python virtual environment. Open a new terminal in the project folder and run `uv sync`, then make sure the environment is selected (look in the lower right corner). If there are executionPolicy errors, you will need to elevate the permissions for Powershell. Instructions [here](https://tecadmin.net/powershell-running-scripts-is-disabled-system/) (copied [here](https://github.com/FLL-Team-24277/FLL-Fall-2025-Unearthed/blob/main/help/config/executionPolicyError.md)), but basically just run `Set-ExecutionPolicy RemoteSigned` in an Administrative PowerShell. Keep the admin PowerShell running because you will need it later on.
+3. Add each account as a collaborator for this project [here](https://github.com/FLL-Team-24277/FLL-Fall-2026-Bioglow/settings/access). Instructions [here](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository). The team member will need to confirm and accept the invitation. At that point they can push updates to the project.
+4. Clone the season Repository. Clone this repository: [https://github.com/FLL-Team-24277/Fall-2026-Bioglow.git](https://github.com/FLL-Team-24277/FLL-Fall-2026-Bioglow.git) Save it somewhere on their computer.
+5. Add a python virtual environment. Open a new terminal in the project folder and run `uv sync`, then make sure the environment is selected (look in the lower right corner). If there are executionPolicy errors, you will need to elevate the permissions for Powershell. Instructions [here](https://tecadmin.net/powershell-running-scripts-is-disabled-system/) (copied [here](https://github.com/FLL-Team-24277/FLL-Fall-2026-Bioglow/blob/main/help/config/executionPolicyError.md)), but basically just run `Set-ExecutionPolicy RemoteSigned` in an Administrative PowerShell. Keep the admin PowerShell running because you will need it later on.
 6. Create a new python file, named `teamMemberName-test-mission.py`, copy and paste the code below, and save it, but don't try to run it just yet. Wait for the final step below. Note that after saving the file, the python Black Formatter should correct the "incorrect" spacing around the equals signs and commas.
 7. Commit the changes, and push. It will probably prompt for github registration/login and then sync all files. This link may help: https://pages.nist.gov/git-novice-MSE/08-collab/. It may also ask you to set your git username and email. Open a terminal and run these two commands to set your username and email `git config --global user.name "FIRST_NAME LAST_NAME"`; and `git config --global user.email "MY_NAME@example.com"`
 8. Install pybricks on each robot at https://pybricks.com/. If the computer has never connected to a pybricks hub, you will probably need to manually install the USB drivers, which will require the use of the windows Device Manager. To run device manager as an admin, run a powershell as an administrator, then type devmgmt.msc. Then complete the usual steps. Name the robot at this time. Avoid spaces and special characters in the robot name. Put a label sticker on the top of the robot with the robot name.
