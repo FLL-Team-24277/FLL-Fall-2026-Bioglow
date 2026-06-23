@@ -11,7 +11,7 @@ Pybricks, VS Code setup, base robot, missions, and materials for the Fall 2026 F
 
 ##  Introduction
 
-We are not "giving away solutions" here. If you are looking for mission solutions, you'll just have to figure them out yourself :) [Read our statement on the FLL "Discovery" core value here.](https://github.com/FLL-Team-24277/FLL-Fall-2025-Unearthed/blob/main/help/github/discovery.md)
+We are not "giving away solutions" here. If you are looking for mission solutions, you'll just have to figure them out yourself :) [Read our statement on the FLL "Discovery" core value here.](https://github.com/FLL-Team-24277/FLL-Fall-2026-Bioglow/blob/main/help/github/discovery.md)
 
 The instructions below will get team members up and running for FLL in a team collaboration environment using [pybricks libraries](https://github.com/pybricks), writing programs with Visual Studio Code, and using git/github for version control. The instructions are not perfect, and you will probably have some troubleshooting and adjustments along the way.
 
