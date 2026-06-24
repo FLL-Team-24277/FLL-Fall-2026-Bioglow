@@ -1,7 +1,7 @@
 # FLL Fall 2026 - Bioglow 🏆
 
 ![FLL Team 24277](https://img.shields.io/badge/FLL%20Team-24277-orange)
-![Season](https://img.shields.io/badge/Season-2025%20Unearthed-blue)
+![Season](https://img.shields.io/badge/Season-2026%20Bioglow-blue)
 ![GitHub last commit](https://img.shields.io/github/last-commit/FLL-Team-24277/FLL-Fall-2026-Bioglow)
 ![GitHub contributors](https://img.shields.io/github/contributors/FLL-Team-24277/FLL-Fall-2026-Bioglow)
 ![GitHub license](https://img.shields.io/github/license/FLL-Team-24277/FLL-Fall-2026-Bioglow)
