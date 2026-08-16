@@ -1,0 +1,1 @@
+The build instructions are saved in your google drive. If you don't see it, ask a coach or team mate.
