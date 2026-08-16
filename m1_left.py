@@ -13,7 +13,7 @@ def Run(br: BaseRobot):
     # It MUST be indented just like the lines below
 
     br.driveArcDist(
-        radius=-200, dist=500, speedPct=80, then=Stop.BRAKE, waiting=True
+        radius=-201, dist=500, speedPct=80, then=Stop.BRAKE, waiting=True
     )
 
 
