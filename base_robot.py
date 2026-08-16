@@ -460,7 +460,6 @@ class BaseRobot:
         """
         speed = RescaleStraightSpeed(speedPct)
         acceleration = RescaleStraightAccel(accelerationPct)
-        print(acceleration)
         self.robot.use_gyro(gyro)
         if wallsquare == True:
             self.robot.drive(RescaleStraightSpeed(-60), 0)
