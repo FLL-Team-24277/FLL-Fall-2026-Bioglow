@@ -5,6 +5,11 @@
 __pycache__/
 ~*
 
+# Binary files - keep out of repo, store on Google Drive instead
+*.pdf
+*.jpg
+*.jpeg
+
 # will sync .gitiginore 
 !/.gitignore
 /.idea
