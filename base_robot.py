@@ -19,12 +19,12 @@ from utils import *
 # All default constant percentages will be defined here
 DEFAULT_MED_MOT_SPEED_PCT = 100  # normal attachment moter speed, % value
 DEFAULT_MED_MOT_ACCEL_PCT = 100
-DEFAULT_BIG_MOT_SPEED_PCT = 50  # normal wheels moter speed, % value
-DEFAULT_BIG_MOT_ACCEL_PCT = 7
+DEFAULT_BIG_MOT_SPEED_PCT = 50  # normal wheels motor speed, % value
+DEFAULT_BIG_MOT_ACCEL_PCT = 25
 DEFAULT_TURN_SPEED_PCT = 45  #
 DEFAULT_TURN_ACCEL_PCT = 45  #
 DEFAULT_STALL_PCT = 50
-CURRENT_PYBRICKS_VERSION = "ci-release-86-v3.6.1 on 2025-03-11"
+CURRENT_PYBRICKS_VERSION = "ci-release-101-v4.0.1 on 2026-06-24"
 
 
 class BaseRobot:
@@ -460,6 +460,7 @@ class BaseRobot:
         """
         speed = RescaleStraightSpeed(speedPct)
         acceleration = RescaleStraightAccel(accelerationPct)
+        print(acceleration)
         self.robot.use_gyro(gyro)
         if wallsquare == True:
             self.robot.drive(RescaleStraightSpeed(-60), 0)

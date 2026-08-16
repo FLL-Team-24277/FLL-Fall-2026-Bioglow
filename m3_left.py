@@ -14,7 +14,10 @@ def Run(br: BaseRobot):
 
     # dfd
     br.driveForDistance(
-        distance=-100, speedPct=80, then=Stop.BRAKE, waiting=True
+        distance=800,
+        then=Stop.BRAKE,
+        waiting=True,
+        accelerationPct=25,
     )
 
 
