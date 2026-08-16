@@ -15,6 +15,10 @@ __pycache__/
 *.mp4
 *.zip
 *.stl
+*.ppt
+*.pptx
+*.xls
+*.xlsx
 
 # will sync .gitiginore 
 !/.gitignore
