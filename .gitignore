@@ -9,6 +9,12 @@ __pycache__/
 *.pdf
 *.jpg
 *.jpeg
+*.png
+*.gif
+*.mov
+*.mp4
+*.zip
+*.stl
 
 # will sync .gitiginore 
 !/.gitignore
