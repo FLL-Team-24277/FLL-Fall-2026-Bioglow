@@ -111,13 +111,32 @@ class BaseRobot:
             AXLE_TRACK,  # defined in utils.py
         )
         # default speeds were determined by testing
+        this_straight_speed = RescaleStraightSpeed(DEFAULT_BIG_MOT_SPEED_PCT)
+        this_straight_acceleration = RescaleStraightAccel(
+            DEFAULT_BIG_MOT_ACCEL_PCT
+        )
+        this_turn_rate = RescaleTurnSpeed(DEFAULT_TURN_SPEED_PCT)
+        this_turn_acceleration = RescaleTurnAccel(DEFAULT_TURN_ACCEL_PCT)
+        print("this_straight_speed = " + str(this_straight_speed))
+        print(
+            "this_straight_acceleration = " + str(this_straight_acceleration)
+        )
+        print("this_turn_rate = " + str(this_turn_rate))
+        print("this_turn_acceleration = " + str(this_turn_acceleration))
         self.robot.settings(
-            straight_speed=RescaleStraightSpeed(DEFAULT_BIG_MOT_SPEED_PCT),
-            straight_acceleration=RescaleStraightAccel(
-                DEFAULT_BIG_MOT_ACCEL_PCT
-            ),
-            turn_rate=RescaleTurnSpeed(DEFAULT_TURN_SPEED_PCT),
-            turn_acceleration=RescaleTurnAccel(DEFAULT_TURN_ACCEL_PCT),
+            straight_speed=this_straight_speed,
+        )
+        self.robot.settings(
+            straight_acceleration=this_straight_acceleration,
+        )
+        self.robot.settings(
+            turn_rate=this_turn_rate,
+        )
+        # self.robot.settings(
+        #     turn_acceleration=this_turn_acceleration,
+        # )
+        self.robot.settings(
+            turn_acceleration=360,
         )
 
         self.leftAttachmentMotor: Motor = Motor(Port.B)
@@ -616,9 +635,7 @@ class BaseRobot:
         speed = RescaleTurnSpeed(speedPct)
         acceleration = RescaleTurnAccel(accelerationPct)
         self.robot.use_gyro(gyro)
-        self.robot.settings(
-            straight_acceleration=acceleration, straight_speed=speed
-        )
+        self.robot.settings(turn_acceleration=acceleration, turn_rate=speed)
         self.robot.turn(angle, then, waiting)
 
     def curve(

@@ -28,6 +28,7 @@
         ".mypy_cache": true
     },
     "task.allowAutomaticTasks": "on",
+    "editor.tabCompletion": "on",
     "git.postCommitCommand": "sync",
     "git.autofetch": true,
     "git.enableSmartCommit": true,

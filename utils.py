@@ -21,8 +21,8 @@ DB_MAX_ACCEL_MMSEC2: int = 500
 # For 56mm, the maximum speed that can be set in the settings() command is 543
 # For 88mm, the maximum speed that can be set in the settings() command is 854.
 # For 88mm, the maximum accel that can be set in the settings() command is 17094.
-DB_MAX_TURN_RATE_DEGSEC: int = 180
-DB_MAX_TURN_ACCEL_DEGSEC2: int = 360
+DB_MAX_TURN_RATE_DEGSEC: int = 720  # was 180
+DB_MAX_TURN_ACCEL_DEGSEC2: int = 450  # was 360
 
 AXLE_TRACK: int = 103  # distance between the wheels, mm
 
@@ -36,7 +36,7 @@ DB_MIN_ACCEL_MMSEC2: int = 25
 # Max and min turning speeds, determined by testing
 # These are not affected by the tire size
 DB_MIN_TURN_RATE_DEGSEC: int = 20
-DB_MIN_TURN_ACCEL_DEGSEC2: int = 10
+DB_MIN_TURN_ACCEL_DEGSEC2: int = 30
 
 # Not sure how these are used
 DB_ABS_MAX_TORQUE_MNM: int = 700  # milli-newton-meters

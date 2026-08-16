@@ -15,7 +15,14 @@ def Run(br: BaseRobot):
     # dfd
 
     # tip
-    br.turnInPlace(90)
+    br.curve(
+        radius=115,
+        angle=720,
+        speedPct=1,
+        then=Stop.BRAKE,
+        waiting=True,
+        accelerationPct=100,
+    )
 
 
 # Leave everything below here and don't type anything below this line
