@@ -12,18 +12,15 @@ def Run(br: BaseRobot):
     # Your mission code goes here, step-by-step
     # It MUST be indented just like the lines below
     br.driveForDistance(
-        distance=1000,
-        speedPct=50,
-        then=Stop.BRAKE,
-        waiting=True,
-        wallsquare=False,
+        distance=700, speedPct=80, then=Stop.BRAKE, waiting=True
     )
+    br.moveRightAttachmentMotorForDegrees(degrees=-180, speedPct=80)
     br.driveForDistance(
-        distance=1000,
-        speedPct=80,
-        then=Stop.BRAKE,
-        waiting=True,
-        accelerationPct=1,
+        distance=-100, speedPct=80, then=Stop.BRAKE, waiting=True
+    )
+    br.moveRightAttachmentMotorForDegrees(degrees=180, speedPct=80)
+    br.driveForDistance(
+        distance=-700, speedPct=80, then=Stop.BRAKE, waiting=True
     )
 
 
