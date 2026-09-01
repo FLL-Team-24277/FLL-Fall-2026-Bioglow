@@ -14,7 +14,7 @@ def Run(br: BaseRobot):
 
     # dfd
 
-    # tip
+    # tip  cc
     br.turnInPlace(30)
 
 
