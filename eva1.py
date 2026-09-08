@@ -1,10 +1,9 @@
 from base_robot import *
 
+
 # left side BLUE
 # Simple test mission: wait for the forward button, then drive forward,
 # turn, and drive again. This gives you a predictable pattern for tuning.
-
-
 # When we run this program from the master program, we will call this
 # "Run(br)" method.
 def Run(br: BaseRobot):

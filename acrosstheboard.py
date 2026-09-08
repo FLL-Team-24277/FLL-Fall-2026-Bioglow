@@ -1,25 +1,20 @@
 from base_robot import *
 
-# left side magenta
-# Add good comments, such as what the mission is supposed to do,
-# how to align the robot in home, any initial starting instructions,
-# such as how it should be loaded with anything, arm positions, etc.
 
-
+# left side BLUE
+# Simple test mission: wait for the forward button, then drive forward,
+# turn, and drive again. This gives you a predictable pattern for tuning.
 # When we run this program from the master program, we will call this
-# "Run(br)" method.
 def Run(br: BaseRobot):
-    # Your mission code goes here, step-by-step
-    # It MUST be indented just like the lines below
-
-    # dad
-    br.driveArcDist(
-        radius=1000,
-        dist=700,
+    br.driveForDistance(
+        distance=800,
         speedPct=80,
         then=Stop.BRAKE,
         waiting=True,
-        gyro=False,
+    )
+    br.turnInPlace(angle=90, speedPct=45)
+    br.driveForDistance(
+        distance=1000, speedPct=80, then=Stop.BRAKE, waiting=True
     )
 
 
