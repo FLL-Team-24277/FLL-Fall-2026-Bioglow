@@ -38,16 +38,26 @@ def Run(br: BaseRobot):
     #     distance=-100, speedPct=80, then=Stop.BRAKE, waiting=True
     # )
     # br.moveRightAttachmentMotorForDegrees(degrees=70, speedPct=80)
+    br.driveForDistance(
+        distance=-100,
+        speedPct=80,
+        then=Stop.BRAKE,
+        waiting=True,
+        accelerationPct=80,
+    )
+    br.driveForDistance(
+        distance=100, speedPct=100, then=Stop.BRAKE, waiting=True
+    )
+    br.moveRightAttachmentMotorForDegrees(degrees=180, speedPct=80)
+    # br.moveLeftAttachmentMotorForDegrees(degrees=-380, speedPct=40)
+    br.turnInPlace(angle=150, speedPct=15)
+    br.moveLeftAttachmentMotorForDegrees(degrees=150, speedPct=80)
     # br.driveForDistance(
-    #     distance=-700, speedPct=80, then=Stop.BRAKE, waiting=True,accelerationPct=80
+    #     distance=700, speedPct=80, then=Stop.BRAKE, waiting=True
     # )
-    # br.driveForDistance(
-    #     distance=150, speedPct=100, then=Stop.BRAKE, waiting=True
-    # )
-    br.turnInPlace(angle=180, speedPct=25)
-    # br.driveArcDist(
-    # radius=600, dist=-800, speedPct=100, then=Stop.BRAKE, waiting=True
-    # )
+    br.driveArcDist(
+        radius=400, dist=800, speedPct=100, then=Stop.BRAKE, waiting=True
+    )
 
 
 # Leave everything below here and don't type anything below this line
