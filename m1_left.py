@@ -11,10 +11,7 @@ from base_robot import *
 def Run(br: BaseRobot):
     # Your mission code goes here, step-by-step
     # It MUST be indented just like the lines below
-
-    br.driveArcDist(
-        radius=-201, dist=500, speedPct=80, then=Stop.BRAKE, waiting=True
-    )
+    br.turnInPlace(angle=15, speedPct=45, waiting=True)
 
 
 # Leave everything below here and don't type anything below this line

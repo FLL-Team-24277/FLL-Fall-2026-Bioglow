@@ -15,7 +15,9 @@ def Run(br: BaseRobot):
     # dfd
 
     # tip
-    br.turnInPlace(-30)
+    br.driveForDistance(
+        distance=100, speedPct=80, then=Stop.BRAKE, waiting=True
+    )
 
 
 # Leave everything below here and don't type anything below this line
