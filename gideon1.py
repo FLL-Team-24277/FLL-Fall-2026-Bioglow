@@ -6,12 +6,12 @@ from base_robot import *
 # such as how it should be loaded with anything, arm positions, etc.
 
 
-# When we run this program from the master program, we will call this
-# "Run(br)" method.
+# When we run this program from the master program, we will call thi
 def Run(br: BaseRobot):
     # Your mission code goes here, step-by-step
     # It MUST be indented just like the lines below
-    br.moveLeftAttachmentMotorForDegrees(degrees=5000, speedPct=80)
+
+    br.moveLeftAttachmentMotorForDegrees(degrees=900, speedPct=-100)
 
 
 # Leave everything below here and don't type anything below this line
