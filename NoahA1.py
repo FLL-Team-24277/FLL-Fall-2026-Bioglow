@@ -15,20 +15,20 @@ def Run(br: BaseRobot):
     # dfd
 
     # tip
-    br.moveRightAttachmentMotorForMillis(millis=650, speedPct=-130)
-    br.moveLeftAttachmentMotorForMillis(millis=260, speedPct=80)
+    br.moveRightAttachmentMotorForMillis(millis=200, speedPct=-120)
+    br.moveLeftAttachmentMotorForMillis(millis=250, speedPct=160)
     br.driveForDistance(
         distance=-50, speedPct=80, then=Stop.BRAKE, waiting=True
     )
-    br.moveLeftAttachmentMotorForMillis(millis=280, speedPct=-80)
+    br.moveLeftAttachmentMotorForMillis(millis=380, speedPct=-80)
 
     br.driveForDistance(
-        distance=-160, speedPct=80, then=Stop.BRAKE, waiting=True
+        distance=-120, speedPct=80, then=Stop.BRAKE, waiting=True
     )
-    br.moveRightAttachmentMotorForMillis(millis=650, speedPct=50)
-    br.moveRightAttachmentMotorForMillis(millis=100, speedPct=50)
+    br.moveRightAttachmentMotorForMillis(millis=250, speedPct=70)
+    br.moveRightAttachmentMotorForMillis(millis=50, speedPct=40)
     br.driveForDistance(
-        distance=-500, speedPct=80, then=Stop.BRAKE, waiting=True
+        distance=-250, speedPct=80, then=Stop.BRAKE, waiting=True
     )
 
 
