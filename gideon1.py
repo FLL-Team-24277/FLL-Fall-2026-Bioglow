@@ -6,15 +6,13 @@ from base_robot import *
 # such as how it should be loaded with anything, arm positions, etc.
 
 
-# When we run this program from the master program, we will call this
-# "Run(br)" method.
+# When we run this program from the master program, we will call thi
 def Run(br: BaseRobot):
     # Your mission code goes here, step-by-step
     # It MUST be indented just like the lines below
-    br.moveLeftAttachmentMotorForDegrees(degrees=5000, speedPct=80)
+    br.driveForDistance(distance=, speedPct=80, then=Stop.BRAKE, waiting=True)
 
-
-# Leave everything below here and don't type anything below this line
+    .Leave everything below here and don't type anything below this line
 # If running this program directly (not from the master program), this is
 # how we know it is running directly. In which case, this method will
 # create a BaseRobot and run the Run(br) method above.
