@@ -1,7 +1,7 @@
 from base_robot import *
 
 # Import missions
-import m1_left, m1_right, m2_left, m2_right, m3_left, m3_right, m4_left, m4_right
+import m1_left, m1_right, m2_left, noahwahooooo, m3_left, m3_right, m4_left, m4_right
 
 br: BaseRobot = BaseRobot()
 
@@ -51,7 +51,7 @@ def launch_selected_mission(selected_color: Color, table_side: str):
             m2_left.Run(br)
         else:
             print("Launching M2 right")
-            m2_right.Run(br)
+            noahwahooooo.Run(br)
         return
 
     if selected_color == Color.SENSOR_YELLOW:  # type: ignore
