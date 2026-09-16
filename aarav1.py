@@ -15,11 +15,11 @@ def Run(br: BaseRobot):
     # dad
     br.driveArcDist(
         radius=1000,
-        dist=700,
+        dist=620,
         speedPct=80,
         then=Stop.BRAKE,
-        waiting=True,
         gyro=False,
+        waiting=True,
     )
 
 
