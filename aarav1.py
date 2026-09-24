@@ -14,7 +14,7 @@ def Run(br: BaseRobot):
 
     # dad
     br.driveArcDist(
-        radius=1000,
+        radius=1000       HI AARAVE I KNOW WHERE YOU LIVE
         dist=620,
         speedPct=80,
         then=Stop.BRAKE,

@@ -9,10 +9,10 @@ from base_robot import *
 def Run(br: BaseRobot):
     # Wait until the team is ready and the robot is in its starting position.
     br.driveForDistance(
-        distance=650,
+        distnce=650,
         speedPct=100,
         then=Stop.BRAKE,
-        waiting=True,
+        waitng=True,
     )
 
     br.driveForDistance(
@@ -28,6 +28,7 @@ def Run(br: BaseRobot):
         then=Stop.BRAKE,
         waiting=True,
     )
+    br.turnInPlace(angle=-45, speedPct=45)
 
 
 # Leave everything below here and don't type anything below this line
