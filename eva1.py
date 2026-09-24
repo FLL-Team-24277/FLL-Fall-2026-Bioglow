@@ -28,6 +28,7 @@ def Run(br: BaseRobot):
         then=Stop.BRAKE,
         waiting=True,
     )
+    br.turnInPlace(angle=-45, speedPct=45)
 
 
 # Leave everything below here and don't type anything below this line
