@@ -14,7 +14,7 @@ def Run(br: BaseRobot):
 
     # dad
     br.driveArcDist(
-        radius=1000       HI AARAVE I KNOW WHERE YOU LIVE
+        radius=1000,
         dist=620,
         speedPct=80,
         then=Stop.BRAKE,
@@ -25,6 +25,7 @@ def Run(br: BaseRobot):
     br.driveForDistance(
         distance=147, speedPct=80, then=Stop.BRAKE, waiting=True
     )
+    br.moveRightAttachmentMotorForDegrees(degrees=95, speedPct=80)
 
 
 # Leave everything below here and don't type anything below this line
