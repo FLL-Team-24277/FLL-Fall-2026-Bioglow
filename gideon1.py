@@ -17,9 +17,8 @@ def Run(br: BaseRobot):
     br.driveForDistance(
         distance=640,
         speedPct=80,
-        then=Stop.BRAKE,
-        waiting=True,
         then=Stop.NONE,
+        waiting=True,
     )
     br.curve(radius=-100, angle=30, speedPct=80, then=Stop.BRAKE, waiting=True)
 
