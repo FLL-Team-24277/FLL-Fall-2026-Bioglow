@@ -12,7 +12,7 @@ def Run(br: BaseRobot):
     # It MUST be indented just like the lines
 
     br.moveLeftAttachmentMotorForMillis(
-        millis=2000, speedPct=80, waiting=False
+        millis=-51000, speedPct=80, waiting=False
     )
     br.driveForDistance(
         distance=640,
