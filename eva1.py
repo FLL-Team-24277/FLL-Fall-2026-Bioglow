@@ -9,7 +9,7 @@ from base_robot import *
 def Run(br: BaseRobot):
     # Wait until the team is ready and the robot is in its starting position.
     br.driveForDistance(
-        distance=650,
+        distance=500,
         speedPct=100,
         then=Stop.BRAKE,
         waiting=True,
@@ -21,36 +21,13 @@ def Run(br: BaseRobot):
         then=Stop.BRAKE,
         waiting=True,
     )
-    br.turnInPlace(angle=-45, speedPct=45)
+    br.turnInPlace(angle=-30, speedPct=45)
     br.driveForDistance(
-        distance=400,
-        speedPct=80,
-        then=Stop.BRAKE,
-        waiting=True,
-    )
-    br.driveForDistance(
-        distance=400,
-        speedPct=80,
-        then=Stop.BRAKE,
-        waiting=True,
-    )
-    br.driveForDistance(
-        distance=-100,
-        speedPct=80,
-        then=Stop.BRAKE,
-        waiting=True,
+        distance=685, speedPct=100, then=Stop.BRAKE, waiting=True, gyro=False
     )
 
-    br.driveForDistance(
-        distance=10,
-        speedPct=80,
-        then=Stop.BRAKE,
-        waiting=True,
-    )
-    br.moveRightAttachmentMotorForDegrees(degrees=-200, speedPct=10)
 
-
-# Leave everything below here and don't type anything below this line
+# Leave everything below here and don't type anything below this line.
 # If running this program directly (not from the master program), this is
 # how we know it is running directly. In which case, this method will
 # create a BaseRobot and run the Run(br) method above.
