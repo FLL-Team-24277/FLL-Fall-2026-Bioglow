@@ -28,11 +28,30 @@ def Run(br: BaseRobot):
         then=Stop.BRAKE,
         waiting=True,
     )
-    br.turnInPlace(angle=-45, speedPct=45)
+    br.driveForDistance(
+        distance=400,
+        speedPct=80,
+        then=Stop.BRAKE,
+        waiting=True,
+    )
+    br.driveForDistance(
+        distance=-100,
+        speedPct=80,
+        then=Stop.BRAKE,
+        waiting=True,
+    )
+
+    br.driveForDistance(
+        distance=10,
+        speedPct=80,
+        then=Stop.BRAKE,
+        waiting=True,
+    )
+    br.moveRightAttachmentMotorForDegrees(degrees=-200, speedPct=10)
 
 
 # Leave everything below here and don't type anything below this line
-# If running this program directly (not from the master program), this is+
+# If running this program directly (not from the master program), this is
 # how we know it is running directly. In which case, this method will
 # create a BaseRobot and run the Run(br) method above.
 # In other words, keep these three lines at the bottom of your code and
