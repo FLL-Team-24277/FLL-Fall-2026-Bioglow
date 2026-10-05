@@ -29,7 +29,7 @@ def Run(br: BaseRobot):
         waiting=True,
         accelerationPct=90,
     )
-    br.moveLeftAttachmentMotorForDegrees(degrees=200, speedPct=80)
+    br.moveLeftAttachmentMotorForDegrees(degrees=250, speedPct=80)
     br.driveForDistance(
         distance=180, speedPct=80, then=Stop.BRAKE, waiting=True
     )
@@ -46,17 +46,16 @@ def Run(br: BaseRobot):
         accelerationPct=80,
     )
     br.driveForDistance(
-        distance=100, speedPct=100, then=Stop.BRAKE, waiting=True
+        distance=70, speedPct=100, then=Stop.BRAKE, waiting=True
     )
     br.moveRightAttachmentMotorForDegrees(degrees=180, speedPct=80)
-    # br.moveLeftAttachmentMotorForDegrees(
-    #     degrees=-190, speedPct=40, waiting=False
-    # )
-    br.turnInPlace(angle=15, speedPct=15)
-    br.moveLeftAttachmentMotorForDegrees(degrees=-50, speedPct=50)
+    # br.moveLeftAttachmentMotorForMillis(millis=1000, speedPct=-30)
+    # br.turnInPlace(angle=15, speedPct=15)
+    # br.moveLeftAttachmentMotorForDegrees(degrees=-50, speedPct=50)
     # br.driveArcDist(
     #     radius=400, dist=600, speedPct=100, then=Stop.BRAKE, waiting=True
     # )
+    br.turnInPlace(angle=50, speedPct=45)
     br.driveForDistance(
         distance=-700, speedPct=80, then=Stop.BRAKE, waiting=True
     )
