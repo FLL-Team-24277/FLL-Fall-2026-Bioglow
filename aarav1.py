@@ -26,7 +26,8 @@ def Run(br: BaseRobot):
         distance=215, speedPct=80, then=Stop.BRAKE, waiting=True
     )
     br.moveRightAttachmentMotorForDegrees(degrees=99, speedPct=80)
-    br.turnInPlace(angle=-25, speedPct=45)
+    # br.turnInPlace(angle=305, speedPct=45)
+    br.moveRightAttachmentMotorForDegrees(degrees=-95, speedPct=80)
     br.driveForDistance(
         distance=-1000, speedPct=80, then=Stop.BRAKE, waiting=True
     )
