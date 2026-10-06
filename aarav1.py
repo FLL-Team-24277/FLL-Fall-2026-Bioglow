@@ -13,25 +13,25 @@ def Run(br: BaseRobot):
     # It MUST be indented just like the lines below
 
     # dad
-    br.driveArcDist(
-        radius=1000,
-        dist=630,
-        speedPct=80,
-        then=Stop.BRAKE,
-        gyro=False,
-        waiting=True,
-    )
-    br.moveRightAttachmentMotorForDegrees(degrees=95, speedPct=80)
-    br.driveForDistance(
-        distance=215, speedPct=80, then=Stop.BRAKE, waiting=True
-    )
-    br.moveRightAttachmentMotorForDegrees(degrees=99, speedPct=80)
-    # br.turnInPlace(angle=305, speedPct=45)
-    br.moveRightAttachmentMotorForDegrees(degrees=-95, speedPct=80)
-    br.driveForDistance(
-        distance=-1000, speedPct=80, then=Stop.BRAKE, waiting=True
-    )
-
+    # br.driveArcDist(
+    #     radius=1000,
+    #     dist=630,
+    #     speedPct=80,
+    #     then=Stop.BRAKE,
+    #     gyro=False,
+    #     waiting=True,
+    # )
+    # br.moveRightAttachmentMotorForDegrees(degrees=95, speedPct=80)
+    # br.driveForDistance(
+    #     distance=215, speedPct=80, then=Stop.BRAKE, waiting=True
+    # )
+    # br.moveRightAttachmentMotorForDegrees(degrees=99, speedPct=80)
+    # # br.turnInPlace(angle=305, speedPct=45)
+    # br.moveRightAttachmentMotorForDegrees(degrees=-95, speedPct=80)
+    # br.driveForDistance(
+    #     distance=-1000, speedPct=80, then=Stop.BRAKE, waiting=True
+    # )
+    br.driveForMillis(millis=3000, speedPct=80)
 
 # Leave everything below here and don't type anything below this line
 # If running this program directly (not from the master program), this is
