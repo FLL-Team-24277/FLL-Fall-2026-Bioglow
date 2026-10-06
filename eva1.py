@@ -7,16 +7,7 @@ from base_robot import *
 # When we run this program from the master program, we will call this
 # "Run(br)" method.
 def Run(br: BaseRobot):
-    # Wait until the team is ready and the robot is in its starting position.
-    br.driveForDistance(
-        distnce=650,
-        speedPct=100,
-        then=Stop.BRAKE,
-        waitng=True,
-    )
-
-    br.driveForDistance(
-        distance=-200,
+    # W
         speedPct=100,
         then=Stop.BRAKE,
         waiting=True,
