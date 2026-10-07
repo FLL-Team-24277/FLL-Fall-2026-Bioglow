@@ -31,7 +31,20 @@ def Run(br: BaseRobot):
     # br.driveForDistance(
     #     distance=-1000, speedPct=80, then=Stop.BRAKE, waiting=True
     # )
-    br.driveForMillis(millis=3000, speedPct=80)
+    br.driveForDistance(
+        distance=700, speedPct=80, then=Stop.BRAKE, waiting=True
+    )
+    br.driveForDistance(
+        distance=-40, speedPct=10, then=Stop.BRAKE, waiting=True
+    )
+    br.moveRightAttachmentMotorForDegrees(
+        degrees=120, speedPct=70
+    )  # br.moveRightAttachmentMotorForDegrees(degrees=99, speedPct=80)
+
+    br.driveForDistance(
+        distance=100, speedPct=80, then=Stop.BRAKE, waiting=True
+    )
+
 
 # Leave everything below here and don't type anything below this line
 # If running this program directly (not from the master program), this is
