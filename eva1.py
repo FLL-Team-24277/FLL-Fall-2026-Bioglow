@@ -1,25 +1,22 @@
 from base_robot import *
 
 
-# left side BLUE
+# lefte BLUE
 # Simple test mission: wait for the forward button, then drive forward,
 # turn, and drive again. This gives you a predictable pattern for tuning.
 # When we run this program from the master program, we will call this
 # "Run(br)" method.
 def Run(br: BaseRobot):
-    # W
-        speedPct=100,
-        then=Stop.BRAKE,
-        waiting=True,
+        speedPct
+        then
+        wa
     )
-    br.turnInPlace(angle=-45, speedPct=45)
-    br.driveForDistance(
-        distance=400,
-        speedPct=80,
-        then=Stop.BRAKE,
-        waiting=True,
+    br.driveFotancedistance=400,
+        speet
+        then=KE,
+        witing=True,
     )
-    br.turnInPlace(angle=-45, speedPct=45)
+    br.turnIngle=-45, speedPct=45) son
 
 
 # Leave everything below here and don't type anything below this line
@@ -29,5 +26,4 @@ def Run(br: BaseRobot):
 # In other words, keep these three lines at the bottom of your code and
 # everything will be fine.
 if __name__ == "__main__":
-    br = BaseRobot()
-    Run(br)
+
