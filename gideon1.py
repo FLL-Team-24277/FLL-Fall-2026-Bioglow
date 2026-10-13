@@ -10,9 +10,9 @@ from base_robot import *
 def Run(br: BaseRobot):
     # Your mission code goes here, step-by-step
     # It MUST be indented just like the lines
-    br.driveForMillis(380, -30)
+    br.driveForMillis(310, -30)
     br.driveArcDist(
-        radius=620, dist=875, speedPct=80, then=Stop.BRAKE, waiting=True
+        radius=615, dist=850, speedPct=80, then=Stop.BRAKE, waiting=True
     )
 
     # br.moveLeftAttachmentMotorForMillis(
