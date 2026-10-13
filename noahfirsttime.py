@@ -23,16 +23,16 @@ def Run(br: BaseRobot):
     # )
 
     br.driveForDistance(
-        distance=600,
+        distance=740,
         speedPct=80,
         then=Stop.BRAKE,
         waiting=True,
         accelerationPct=90,
     )
-    br.moveLeftAttachmentMotorForDegrees(degrees=200, speedPct=80)
-    br.driveForDistance(
-        distance=180, speedPct=80, then=Stop.BRAKE, waiting=True
-    )
+    # br.moveLeftAttachmentMotorForDegrees(degrees=200, speedPct=80)
+    # br.driveForDistance(
+    #     distance=140, speedPct=80, then=Stop.BRAKE, waiting=True
+    # )
     br.moveRightAttachmentMotorForDegrees(degrees=-180, speedPct=80)
     # br.driveForDistance(
     #     distance=-100, speedPct=80, then=Stop.BRAKE, waiting=True
@@ -49,16 +49,29 @@ def Run(br: BaseRobot):
         distance=70, speedPct=100, then=Stop.BRAKE, waiting=True
     )
     br.moveRightAttachmentMotorForDegrees(degrees=150, speedPct=80)
-    br.moveLeftAttachmentMotorForMillis(millis=1000, speedPct=-30)
-    # br.turnInPlace(angle=15, speedPct=15)
-    # br.moveLeftAttachmentMotorForDegrees(degrees=-50, speedPct=50)
-    # br.driveArcDist(
-    #     radius=400, dist=600, speedPct=100, then=Stop.BRAKE, waiting=True
-    # )
-    # br.turnInPlace(angle=50, speedPct=45)
+    # br.moveLeftAttachmentMotorForDegrees(degrees=-200, speedPct=80)
+    br.turnInPlace(angle=-90, speedPct=15)
     br.driveForDistance(
-        distance=-700, speedPct=80, then=Stop.BRAKE, waiting=True
+        distance=300, speedPct=80, then=Stop.BRAKE, waiting=True
     )
+    br.turnInPlace(angle=-45, speedPct=45)
+    br.driveForDistance(
+        distance=-180, speedPct=10, then=Stop.BRAKE, waiting=True
+    )
+    br.driveArcDist(
+        radius=-475, dist=1200, speedPct=80, then=Stop.BRAKE, waiting=True
+    )
+
+
+# br.moveLeftAttachmentMotorForMillis(millis=1000, speedPct=-100)
+# br.turnInPlace(angle=30, speedPct=25)
+# br.driveArcDist(
+#     radius=400, dist=600, speedPct=100, then=Stop.BRAKE, waiting=True
+# )
+# br.turnInPlace(angle=50, speedPct=45)
+# br.driveForDistance(
+# distance=-700, speedPct=80, then=Stop.BRAKE, waiting=True
+# )
 
 
 # Leave everything below here and don't type anything below this line
