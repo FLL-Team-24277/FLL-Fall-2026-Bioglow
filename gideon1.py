@@ -10,15 +10,17 @@ from base_robot import *
 def Run(br: BaseRobot):
     # Your mission code goes here, step-by-step
     # It MUST be indented just like the lines
-    br.driveForDistance(
-        distance=660, speedPct=50, then=Stop.BRAKE, waiting=True
+    br.driveForMillis(380, -30)
+    br.driveArcDist(
+        radius=620, dist=875, speedPct=80, then=Stop.BRAKE, waiting=True
     )
-    br.moveLeftAttachmentMotorForMillis(
-        millis=1100, speedPct=100, waiting=True
-    )
-    br.turnInPlace(angle=-38, speedPct=15)
+
+    # br.moveLeftAttachmentMotorForMillis(
+    #     millis=1100, speedPct=100, waiting=True
+    # )
+    br.turnInPlace(angle=-85, speedPct=15)
     br.driveForDistance(
-        distance=150, speedPct=50, then=Stop.BRAKE, waiting=True
+        distance=150, speedPct=15, then=Stop.BRAKE, waiting=True
     )
     br.moveLeftAttachmentMotorForMillis(
         millis=1100, speedPct=-100, waiting=True
@@ -26,13 +28,15 @@ def Run(br: BaseRobot):
     br.driveForDistance(
         distance=110, speedPct=40, then=Stop.BRAKE, waiting=True
     )
-    br.curve(
-        radius=-40, angle=-45, speedPct=100, then=Stop.BRAKE, waiting=True
+    # br.curve(
+    #     radius=-40, angle=-45, speedPct=100, then=Stop.BRAKE, waiting=True
+    # )
+    # br.driveForDistance(
+    #     distance=-180, speedPct=80, then=Stop.BRAKE, waiting=True
+    # )
+    br.driveArcDist(
+        radius=-620, dist=-875, speedPct=80, then=Stop.BRAKE, waiting=True
     )
-    br.driveForDistance(
-        distance=-15, speedPct=80, then=Stop.BRAKE, waiting=True
-    )
-
     # Leave everything below here and don't type anything below this line
 
 
