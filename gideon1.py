@@ -12,13 +12,13 @@ def Run(br: BaseRobot):
     # It MUST be indented just like the lines
     br.driveForMillis(310, -30)
     br.driveArcDist(
-        radius=615, dist=850, speedPct=80, then=Stop.BRAKE, waiting=True
+        radius=650, dist=860, speedPct=80, then=Stop.BRAKE, waiting=True
     )
 
     # br.moveLeftAttachmentMotorForMillis(
     #     millis=1100, speedPct=100, waiting=True
     # )
-    br.turnInPlace(angle=-85, speedPct=15)
+    br.turnInPlace(angle=-80, speedPct=15)
     br.driveForDistance(
         distance=150, speedPct=15, then=Stop.BRAKE, waiting=True
     )
@@ -35,7 +35,7 @@ def Run(br: BaseRobot):
     #     distance=-180, speedPct=80, then=Stop.BRAKE, waiting=True
     # )
     br.driveArcDist(
-        radius=-620, dist=-875, speedPct=80, then=Stop.BRAKE, waiting=True
+        radius=-650, dist=-860, speedPct=80, then=Stop.BRAKE, waiting=True
     )
     # Leave everything below here and don't type anything below this line
 
