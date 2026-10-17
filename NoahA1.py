@@ -19,7 +19,7 @@ def Run(br: BaseRobot):
     )
     br.moveRightAttachmentMotorForMillis(millis=800, speedPct=-10)
     br.waitForBackButton()
-    br.moveLeftAttachmentMotorForMillis(millis=700, speedPct=60)
+    br.moveLeftAttachmentMotorForMillis(millis=700, speedPct=80)
     br.waitForBackButton()
     br.waitForBackButton()
     br.driveForDistance(
@@ -33,7 +33,7 @@ def Run(br: BaseRobot):
     br.driveForDistance(
         distance=-300, speedPct=80, then=Stop.BRAKE, waiting=True
     )
-    br.moveLeftAttachmentMotorForMillis(millis=600, speedPct=-10)
+    br.moveLeftAttachmentMotorForMillis(millis=600, speedPct=-30)
 
 
 # Leave everything below here and don't type anything below this line
