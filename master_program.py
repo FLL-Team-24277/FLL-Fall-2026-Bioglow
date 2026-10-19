@@ -1,3 +1,4 @@
+import NoahA1
 from base_robot import *
 
 # Import missions
@@ -44,7 +45,7 @@ def launch_selected_mission(selected_color: Color, table_side: str):
             m1_left.Run(br)
         else:
             print("Launching M1 right")
-            m1_right.Run(br)
+            NoahA1.Run(br)
         return
 
     if selected_color == Color.SENSOR_RED:  # type: ignore
