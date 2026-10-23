@@ -8,7 +8,7 @@ from base_robot import *
 # "Run(br)" method.
 def Run(br: BaseRobot):
         speedPct
-        then
+        then             
         wa
     )
     br.driveFotancedistance=400,
