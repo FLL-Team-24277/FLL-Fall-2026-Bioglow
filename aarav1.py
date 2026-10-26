@@ -14,16 +14,21 @@ def Run(br: BaseRobot):
 
     # dad
     br.driveArcDist(
-        radius=1000       HI AARAVE I KNOW WHERE YOU LIVE
-        dist=620,
+        radius=1000,
+        dist=630,
         speedPct=80,
         then=Stop.BRAKE,
         gyro=False,
         waiting=True,
     )
-    br.moveRightAttachmentMotorForDegrees(degrees=80, speedPct=80)
+    br.moveRightAttachmentMotorForDegrees(degrees=95, speedPct=80)
     br.driveForDistance(
-        distance=40, speedPct=80, then=Stop.BRAKE, waiting=True
+        distance=215, speedPct=80, then=Stop.BRAKE, waiting=True
+    )
+    br.moveRightAttachmentMotorForDegrees(degrees=100, speedPct=80)
+    br.turnInPlace(angle=-25, speedPct=45)
+    br.driveForDistance(
+        distance=-1000, speedPct=80, then=Stop.BRAKE, waiting=True
     )
 
 
