@@ -1,7 +1,10 @@
+import NoahA1
 from base_robot import *
 
 # Import missions
-import m1_left, m1_right, m2_left, noahwahooooo, m3_left, m3_right, m4_left, m4_right
+import m1_right
+import noahANGY
+import m1_left, noahfirsttime, m2_left, noahwahooooo, m3_left, m3_right, m4_left, m4_right
 
 br: BaseRobot = BaseRobot()
 
@@ -42,7 +45,7 @@ def launch_selected_mission(selected_color: Color, table_side: str):
             m1_left.Run(br)
         else:
             print("Launching M1 right")
-            m1_right.Run(br)
+            NoahA1.Run(br)
         return
 
     if selected_color == Color.SENSOR_RED:  # type: ignore
@@ -60,7 +63,7 @@ def launch_selected_mission(selected_color: Color, table_side: str):
             m3_left.Run(br)
         else:
             print("Launching M3 right")
-            m3_right.Run(br)
+            noahfirsttime.Run(br)
         return
     if selected_color == Color.SENSOR_WHITE:  # type: ignore
         if table_side == "left":
@@ -68,7 +71,7 @@ def launch_selected_mission(selected_color: Color, table_side: str):
             m4_left.Run(br)
         else:
             print("Launching M4 right")
-            m4_right.Run(br)
+            noahANGY.Run(br)
         return
 
     print("No mission is assigned to that color.")

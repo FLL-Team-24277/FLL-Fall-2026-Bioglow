@@ -13,23 +13,38 @@ def Run(br: BaseRobot):
     # It MUST be indented just like the lines below
 
     # dad
-    br.driveArcDist(
-        radius=1000,
-        dist=630,
-        speedPct=80,
-        then=Stop.BRAKE,
-        gyro=False,
-        waiting=True,
-    )
-    br.moveRightAttachmentMotorForDegrees(degrees=95, speedPct=80)
+    # br.driveArcDist(
+    #     radius=1000,
+    #     dist=630,
+    #     speedPct=80,
+    #     then=Stop.BRAKE,
+    #     gyro=False,
+    #     waiting=True,
+    # )
+    # br.moveRightAttachmentMotorForDegrees(degrees=95, speedPct=80)
+    # br.driveForDistance(
+    #     distance=215, speedPct=80, then=Stop.BRAKE, waiting=True
+    # )
+    # br.moveRightAttachmentMotorForDegrees(degrees=99, speedPct=80)
+    # # br.turnInPlace(angle=305, speedPct=45)
+    # br.moveRightAttachmentMotorForDegrees(degrees=-95, speedPct=80)
+    # br.driveForDistance(
+    #     distance=-1000, speedPct=80, then=Stop.BRAKE, waiting=True
+    #
     br.driveForDistance(
-        distance=215, speedPct=80, then=Stop.BRAKE, waiting=True
+        distance=585, speedPct=90, then=Stop.BRAKE, waiting=True
     )
-    br.moveRightAttachmentMotorForDegrees(degrees=100, speedPct=80)
-    br.turnInPlace(angle=-25, speedPct=45)
+    br.moveLeftAttachmentMotorForMillis(millis=650, speedPct=80)
     br.driveForDistance(
-        distance=-1000, speedPct=80, then=Stop.BRAKE, waiting=True
+        distance=-585, speedPct=80, then=Stop.BRAKE, waiting=True
     )
+    # br.driveForDistance(
+    #     distance=135, speedPct=80, then=Stop.BRAKE, waiting=True
+    # )
+    # br.moveRightAttachmentMotorForMillis(millis=150, speedPct=80)
+    # br.driveForDistance(
+    #     distance=-705, speedPct=80, then=Stop.BRAKE, waiting=True
+    # )
 
 
 # Leave everything below here and don't type anything below this line

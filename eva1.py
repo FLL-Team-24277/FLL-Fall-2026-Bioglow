@@ -1,10 +1,10 @@
-from base_robot import *
+from base_bot import *
 
 
-# left side BLUE
-# Simple test mission: wait for the forward button, then drive forward,
-# turn, and drive again. This gives you a predictable pattern for tuning.
-# When we run this program from the master program, we will call this
+# leftLUE
+# Sie tesssion: waitherward button, then drive forward,
+# turn, and drigain. This g you a predictaattern for tuning.
+# When we runis program from the master program, we will call this
 # "Run(br)" method.
 def Run(br: BaseRobot):
     # Wait until the team is ready and the robot is in its starting position.
@@ -19,7 +19,7 @@ def Run(br: BaseRobot):
         distance=-200,
         speedPct=100,
         then=Stop.BRAKE,
-                waiting=True,
+        waiting=True,
     )
     br.turnInPlace(angle=-30, speedPct=45)
 

@@ -13,22 +13,29 @@ def Run(br: BaseRobot):
     # It MUST be indented just like the lines below
 
     # dfd
-
-    # tip
-    br.moveRightAttachmentMotorForMillis(millis=200, speedPct=-120)
-    br.moveLeftAttachmentMotorForMillis(millis=250, speedPct=160)
+    # br.driveForMillis(millis=-300, speedPct=80)
     br.driveForDistance(
-        distance=-50, speedPct=80, then=Stop.BRAKE, waiting=True
+        distance=332, speedPct=80, then=Stop.BRAKE, waiting=True
     )
-    br.moveLeftAttachmentMotorForMillis(millis=380, speedPct=-80)
-
-    br.driveForDistance(
-        distance=-90, speedPct=80, then=Stop.BRAKE, waiting=True
+    br.moveRightAttachmentMotorForMillis(
+        millis=800, speedPct=-10, waiting=False
     )
-    br.moveRightAttachmentMotorForMillis(millis=250, speedPct=70)
-    br.moveRightAttachmentMotorForMillis(millis=50, speedPct=40)
+
+    br.moveLeftAttachmentMotorForMillis(millis=725, speedPct=80)
+
+    br.moveLeftAttachmentMotorForMillis(millis=725, speedPct=-80)
     br.driveForDistance(
-        distance=-250, speedPct=80, then=Stop.BRAKE, waiting=True
+        distance=-110, speedPct=80, then=Stop.BRAKE, waiting=True
+    )
+    br.moveRightAttachmentMotorForMillis(millis=500, speedPct=40)
+    br.moveLeftAttachmentMotorForMillis(
+        millis=600, speedPct=-30, waiting=False
+    )
+    # br.driveForDistance(
+    #     distance=-300, speedPct=80, then=Stop.BRAKE, waiting=True
+    # )
+    br.driveArcDist(
+        radius=150, dist=-300, speedPct=80, then=Stop.BRAKE, waiting=True
     )
 
 
