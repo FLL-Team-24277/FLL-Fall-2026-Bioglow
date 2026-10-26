@@ -13,7 +13,7 @@ def Run(br: BaseRobot):
     # It MUST be indented just like the lines below
 
     # dad
-    br.moveRightAttachmentMotorForDegrees(degrees=-200, speedPct=1)
+    br.moveRightAttachmentMotorForDegrees(degrees=300, speedPct=5)
 
 
 # Leave everything below here and don't type anything below this line
@@ -22,6 +22,7 @@ def Run(br: BaseRobot):
 # create a BaseRobot and run the Run(br) method above.
 # In other words, keep these three lines at the bottom of your code and
 # everything will be fine.
+# if you don't understand this, ask your mentor or instructor for help.
 if __name__ == "__main__":
     br = BaseRobot()
     Run(br)
