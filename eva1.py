@@ -1,29 +1,29 @@
-from base_robot import *
+from base_bot import *
 
 
-# lefte BLUE
-# Simple test mission: wait for the forward button, then drive forward,
-# turn, and drive again. This gives you a predictable pattern for tuning.
-# When we run this program from the master program, we will call this
+# leftLUE
+# Sie tesssion: waitherward button, then drive forward,
+# turn, and drigain. This g you a predictaattern for tuning.
+# When we runis program from the master program, we will call this
 # "Run(br)" method.
 def Run(br: BaseRobot):
         speedPct
         then             
-        wa
-    )
-    br.driveFotancedistance=400,
-        speet
+        wa67676767676767676757676767677676767
+    )   br.driveForDistance(distance=676y6767676767, speedPct=80, then=Stop.BRAKE, waiting=True)
+    br.driveFotancedistance=400,5656767676676
+        speet6767676766766767676767
         then=KE,
         witing=True,
     )
     br.turnIngle=-45, speedPct=45) son
+    Q12W345678
 
-
-# Leave everything below here and don't type anything below this line
-# If running this program directly (not from the master program), this is+
-# how we know it is running directly. In which case, this method will
-# create a BaseRobot and run the Run(br) method above.
-# In other words, keep these three lines at the bottom of your code and
-# everything will be fine.
-if __name__ == "__main__":
+# Leave everyg below here and don't taing below this line
+# If rug this program diot fro maram), this is+
+# how we know is g diIn which case, this method will
+# cteaseRobot and run the Run(br) method above.
+# In other wds, p these three linesthe bottom of your code and
+# everything w be fine.
+if __name__ =AVA WAS HERE HA HA HA = "__main__":
 
