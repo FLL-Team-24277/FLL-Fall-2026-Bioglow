@@ -13,8 +13,9 @@ def Run(br: BaseRobot):
     # It MUST be indented just like the lines below
 
     # dfd
+    br.moveLeftAttachmentMotorForMillis(millis=125, speedPct=80)
     br.driveArcDist(
-        radius=152, dist=135, speedPct=80, then=Stop.NONE, waiting=True
+        radius=157, dist=135, speedPct=80, then=Stop.NONE, waiting=True
     )
     br.driveForDistance(
         distance=255, speedPct=80, then=Stop.BRAKE, waiting=True
@@ -22,28 +23,38 @@ def Run(br: BaseRobot):
     br.moveLeftAttachmentMotorForMillis(millis=210, speedPct=80)
 
     br.driveForDistance(
-        distance=-180, speedPct=80, then=Stop.BRAKE, waiting=True
+        distance=-200, speedPct=80, then=Stop.BRAKE, waiting=True
     )
-    br.moveLeftAttachmentMotorForMillis(millis=210, speedPct=-80)
+    br.moveLeftAttachmentMotorForMillis(millis=130, speedPct=-80)
     br.driveArcDist(
-        radius=530, dist=395, speedPct=80, then=Stop.NONE, waiting=True
+        radius=540, dist=395, speedPct=80, then=Stop.NONE, waiting=True
     )
     br.driveForDistance(
-        distance=90, speedPct=80, then=Stop.BRAKE, waiting=True
+        distance=121, speedPct=80, then=Stop.BRAKE, waiting=True
     )
-    br.moveRightAttachmentMotorForMillis(millis=800, speedPct=80)
-    wait(800)
-    br.moveRightAttachmentMotorForMillis(millis=800, speedPct=-80)
+    br.moveRightAttachmentMotorForMillis(millis=950, speedPct=80)
+    wait(1100)
+    br.moveRightAttachmentMotorForMillis(millis=950, speedPct=-80)
     br.driveArcDist(
-        radius=-823, dist=300, speedPct=80, then=Stop.NONE, waiting=True
+        radius=-853, dist=150, speedPct=80, then=Stop.BRAKE, waiting=True
     )
     br.driveForDistance(
-        distance=20, speedPct=80, then=Stop.BRAKE, waiting=True
+        distance=128, speedPct=80, then=Stop.BRAKE, waiting=True
     )
-
-    br.moveLeftAttachmentMotorForMillis(millis=180, speedPct=50)
+    br.moveLeftAttachmentMotorForMillis(millis=220, speedPct=30)
     br.driveForDistance(
         distance=-120, speedPct=80, then=Stop.BRAKE, waiting=True
+    )
+    br.moveLeftAttachmentMotorForMillis(millis=280, speedPct=-20)
+    br.driveForDistance(
+        distance=135, speedPct=80, then=Stop.BRAKE, waiting=True
+    )
+    br.driveArcDist(
+        radius=20, dist=10, speedPct=80, then=Stop.NONE, waiting=True
+    )
+
+    br.driveForDistance(
+        distance=750, speedPct=80, then=Stop.BRAKE, waiting=True
     )
 
 
