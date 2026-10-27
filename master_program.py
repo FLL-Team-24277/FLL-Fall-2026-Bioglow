@@ -4,7 +4,7 @@ from base_robot import *
 # Import missions
 import m1_right
 import noahANGY
-import m1_left, noahfirsttime, m2_left, noahwahooooo, m3_left, m3_right, m4_left, m4_right
+import aarav1, noahfirsttime, Maarten2, noahwahooooo, eva2, m3_right, m4_left, m4_right
 
 br: BaseRobot = BaseRobot()
 
@@ -42,7 +42,7 @@ def launch_selected_mission(selected_color: Color, table_side: str):
     if selected_color == Color.SENSOR_BLUE:  # type: ignore
         if table_side == "left":
             print("Launching M1 left")
-            m1_left.Run(br)
+            Maarten2.Run(br)
         else:
             print("Launching M1 right")
             NoahA1.Run(br)
@@ -51,7 +51,7 @@ def launch_selected_mission(selected_color: Color, table_side: str):
     if selected_color == Color.SENSOR_RED:  # type: ignore
         if table_side == "left":
             print("Launching M2 left")
-            m2_left.Run(br)
+            aarav1.Run(br)
         else:
             print("Launching M2 right")
             noahwahooooo.Run(br)
@@ -60,7 +60,7 @@ def launch_selected_mission(selected_color: Color, table_side: str):
     if selected_color == Color.SENSOR_YELLOW:  # type: ignore
         if table_side == "left":
             print("Launching M3 left")
-            m3_left.Run(br)
+            eva2.Run(br)
         else:
             print("Launching M3 right")
             noahfirsttime.Run(br)
