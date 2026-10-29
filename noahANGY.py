@@ -11,25 +11,39 @@ from base_robot import *
 def Run(br: BaseRobot):
     # Your mission code goes here, step-by-step
     # It MUST be indented just like the lines below
+    # br.driveForDistance(
+    #     distance=750,
+    #     speedPct=100,
+    #     then=Stop.BRAKE,
+    #     waiting=True,
+    #     accelerationPct=90,
+    # )
+    # br.turnInPlace(angle=25, speedPct=45)
+    # br.driveForDistance(
+    #     distance=25, speedPct=80, then=Stop.BRAKE, waiting=True
+    # )
+    # br.turnInPlace(angle=43, speedPct=45)
+    # br.turnInPlace(angle=-35, speedPct=45)
+    # br.driveForDistance(
+    #     distance=-20, speedPct=80, then=Stop.BRAKE, waiting=True
+    # )
+    # br.moveRightAttachmentMotorForDegrees(degrees=-350, speedPct=50)
+    # br.driveForDistance(
+    #     distance=-200, speedPct=80, then=Stop.BRAKE, waiting=True
+    # )
     br.driveForDistance(
-        distance=750,
-        speedPct=100,
-        then=Stop.BRAKE,
-        waiting=True,
-        accelerationPct=90,
+        distance=740, speedPct=100, then=Stop.BRAKE, waiting=True
     )
-    br.turnInPlace(angle=30, speedPct=45)
+    br.turnInPlace(angle=27, speedPct=100)
     br.driveForDistance(
         distance=25, speedPct=80, then=Stop.BRAKE, waiting=True
     )
-    br.turnInPlace(angle=43, speedPct=45)
-    br.turnInPlace(angle=-35, speedPct=45)
-    br.driveForDistance(
-        distance=-20, speedPct=80, then=Stop.BRAKE, waiting=True
-    )
-    br.moveRightAttachmentMotorForDegrees(degrees=-350, speedPct=50)
-    br.driveForDistance(
-        distance=-200, speedPct=80, then=Stop.BRAKE, waiting=True
+
+    br.turnInPlace(angle=55, speedPct=20)
+    br.turnInPlace(angle=-60, speedPct=20)
+    br.moveRightAttachmentMotorForDegrees(degrees=-300, speedPct=80)
+    br.driveArcDist(
+        radius=800, dist=-900, speedPct=80, then=Stop.BRAKE, waiting=True
     )
 
 
