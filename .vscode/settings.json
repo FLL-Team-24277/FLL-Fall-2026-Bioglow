@@ -44,5 +44,9 @@
     "black-formatter.args": [
         "--line-length",
         "79"
-    ]
+    ],
+    "chat.tools.terminal.autoApprove": {
+        "git remote": true,
+        "git push": true
+    }
 }
