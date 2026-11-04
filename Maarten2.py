@@ -13,18 +13,26 @@ def Run(br: BaseRobot):
     # It MUST be indented just like the lines below
 
     # dfd
+
+    # Reset the tray initially to make sure it is in the right position
     br.moveLeftAttachmentMotorForMillis(millis=125, speedPct=80)
     br.driveArcDist(
         radius=157, dist=135, speedPct=80, then=Stop.NONE, waiting=True
     )
+
+    # Appoach the exploding seeds
     br.driveForDistance(
         distance=255, speedPct=80, then=Stop.BRAKE, waiting=True
     )
+
+    # Raise the tray to pick up the exploding seeds
     br.moveLeftAttachmentMotorForMillis(millis=210, speedPct=80)
 
+    # Backup after picking up the exploding seeds
     br.driveForDistance(
         distance=-210, speedPct=80, then=Stop.BRAKE, waiting=True
     )
+
     br.moveLeftAttachmentMotorForMillis(millis=110, speedPct=-80)
     br.driveArcDist(
         radius=550, dist=395, speedPct=80, then=Stop.NONE, waiting=True
