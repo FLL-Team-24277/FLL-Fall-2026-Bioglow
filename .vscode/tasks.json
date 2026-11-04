@@ -194,16 +194,15 @@
             "description": "Which Robot?",
             "options": [
                 "BOB",
-                "CURIOSITY",
-                "GABE",
-                "LEROYYY",
+                "FINN",
+                "HAN",
+                "LEIA",
                 "MITZVAH",
-                "NOTDECLAN",
                 "OAKS",
+                "PADME",
                 "PATRIOT",
-                "SUPERNOVA",
                 "TIM",
-                "TIMOTHY"
+                "TIMMY"
             ]
         }
     ]
