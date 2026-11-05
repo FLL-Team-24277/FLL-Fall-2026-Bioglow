@@ -21,10 +21,10 @@ def Run(br: BaseRobot):
     #     waiting=True,
     #     accelerationPct=100,
     # )
-
+    br.driveForMillis(millis=200, speedPct=-100)
     br.driveForDistance(
-        distance=740,
-        speedPct=80,
+        distance=600,
+        speedPct=100,
         then=Stop.BRAKE,
         waiting=True,
         accelerationPct=90,
@@ -39,24 +39,38 @@ def Run(br: BaseRobot):
     # )
     # br.moveRightAttachmentMotorForDegrees(degrees=70, speedPct=80)
     br.driveForDistance(
-        distance=-100,
-        speedPct=80,
+        distance=120,
+        speedPct=100,
         then=Stop.BRAKE,
         waiting=True,
         accelerationPct=80,
     )
+    br.moveRightAttachmentMotorForDegrees(degrees=60, speedPct=100)
+
+    # br.moveRightAttachmentMotorForDegrees(degrees=100, speedPct=100)
+
+    # br.driveForDistance(
+    #     distance=70, speedPct=100, then=Stop.BRAKE, waiting=True
+    # )
     br.driveForDistance(
-        distance=70, speedPct=100, then=Stop.BRAKE, waiting=True
+        distance=-110, speedPct=80, then=Stop.BRAKE, waiting=True
     )
-    br.moveRightAttachmentMotorForDegrees(degrees=150, speedPct=80)
+    # br.moveRightAttachmentMotorForMillis(millis=200, speedPct=-100)
+    br.moveRightAttachmentMotorForDegrees(degrees=-40, speedPct=100)
+    # br.moveRightAttachmentMotorForDegrees(degrees=-40, speedPct=100)
+    br.driveForDistance(
+        distance=60, speedPct=80, then=Stop.BRAKE, waiting=True
+    )
     # br.moveLeftAttachmentMotorForDegrees(degrees=-200, speedPct=80)
     br.turnInPlace(angle=-90, speedPct=15)
     br.driveForDistance(
-        distance=300, speedPct=80, then=Stop.BRAKE, waiting=True
+        distance=250, speedPct=80, then=Stop.NONE, waiting=True
     )
+    br.moveRightAttachmentMotorForDegrees(degrees=100, speedPct=100)
+
     br.turnInPlace(angle=-45, speedPct=45)
     br.driveForDistance(
-        distance=-190, speedPct=10, then=Stop.NONE, waiting=True
+        distance=-200, speedPct=10, then=Stop.NONE, waiting=True
     )
     # br.driveForDistance(
     #     distance=100, speedPct=80, then=Stop.NONE, waiting=True
