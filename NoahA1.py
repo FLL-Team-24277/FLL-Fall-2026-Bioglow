@@ -21,22 +21,23 @@ def Run(br: BaseRobot):
         millis=800, speedPct=-10, waiting=True
     )
 
+    br.waitForMillis(millis=500)
     br.moveLeftAttachmentMotorForMillis(millis=725, speedPct=80)
 
-    # br.moveLeftAttachmentMotorForMillis(millis=725, speedPct=-80)
+    br.moveLeftAttachmentMotorForMillis(millis=725, speedPct=-80)
+    br.driveForDistance(
+        distance=-110, speedPct=80, then=Stop.BRAKE, waiting=True
+    )
+    br.moveRightAttachmentMotorForMillis(millis=500, speedPct=40)
+    br.moveLeftAttachmentMotorForMillis(
+        millis=600, speedPct=-30, waiting=False
+    )
     # br.driveForDistance(
-    #     distance=-110, speedPct=80, then=Stop.BRAKE, waiting=True
+    #     distance=-300, speedPct=80, then=Stop.BRAKE, waiting=True
     # )
-    # br.moveRightAttachmentMotorForMillis(millis=500, speedPct=40)
-    # br.moveLeftAttachmentMotorForMillis(
-    #     millis=600, speedPct=-30, waiting=False
-    # )
-    # # br.driveForDistance(
-    # #     distance=-300, speedPct=80, then=Stop.BRAKE, waiting=True
-    # # )
-    # br.driveArcDist(
-    #     radius=150, dist=-300, speedPct=80, then=Stop.BRAKE, waiting=True
-    # )
+    br.driveArcDist(
+        radius=150, dist=-300, speedPct=80, then=Stop.BRAKE, waiting=True
+    )
 
 
 # Leave everything below here and don't type anything below this line
