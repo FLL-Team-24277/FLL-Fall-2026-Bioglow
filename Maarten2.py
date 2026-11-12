@@ -65,7 +65,7 @@ def Run(br: BaseRobot):
         accelerationPct=55,
     )
     br.driveForDistance(
-        distance=118,
+        distance=121,
         speedPct=80,
         then=Stop.BRAKE,
         waiting=True,
@@ -108,7 +108,7 @@ def Run(br: BaseRobot):
         accelerationPct=55,
     )
     br.driveArcDist(
-        radius=479,
+        radius=460,
         dist=300,
         speedPct=100,
         then=Stop.NONE,
