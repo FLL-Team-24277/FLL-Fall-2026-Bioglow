@@ -77,7 +77,7 @@ def Run(br: BaseRobot):
     br.moveLeftAttachmentMotorForMillis(millis=90, speedPct=-100)
     br.moveRightAttachmentMotorForMillis(millis=1100, speedPct=-100)
     br.driveArcDist(
-        radius=-730,
+        radius=-675,
         dist=135,
         speedPct=100,
         then=Stop.NONE,
@@ -108,7 +108,7 @@ def Run(br: BaseRobot):
         accelerationPct=48,
     )
     br.driveArcDist(
-        radius=430,
+        radius=450,
         dist=300,
         speedPct=100,
         then=Stop.NONE,
