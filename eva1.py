@@ -10,14 +10,14 @@ def Run(br: BaseRobot):
     # Wait until the team is ready and the robot is in its starting position.
     br.driveForDistance(
         distance=500,
-        speedPct=100,
+        speedPct=450,
         then=Stop.BRAKE,
         waiting=True,
     )
 
     br.driveForDistance(
         distance=-400,
-        speedPct=200,
+        speedPct=600,
         then=Stop.BRAKE,
         waiting=True,
     )
