@@ -15,14 +15,23 @@ def Run(br: BaseRobot):
     # dfd
 
     # Reset the tray initially to make sure it is in the right position
-    br.moveLeftAttachmentMotorForMillis(millis=110, speedPct=100)
+    br.moveLeftAttachmentMotorForMillis(millis=125, speedPct=100)
     br.driveArcDist(
-        radius=158, dist=135, speedPct=100, then=Stop.NONE, waiting=True
+        radius=158,
+        dist=135,
+        speedPct=100,
+        then=Stop.NONE,
+        waiting=True,
+        accelerationPct=55,
     )
 
     # Appoach the exploding seeds
     br.driveForDistance(
-        distance=255, speedPct=100, then=Stop.BRAKE, waiting=True
+        distance=255,
+        speedPct=100,
+        then=Stop.BRAKE,
+        waiting=True,
+        accelerationPct=55,
     )
 
     # Raise the tray to pick up the exploding seeds
@@ -30,19 +39,37 @@ def Run(br: BaseRobot):
 
     # Backup after picking up the exploding seeds
     br.driveForDistance(
-        distance=-210, speedPct=100, then=Stop.BRAKE, waiting=True
+        distance=-210,
+        speedPct=100,
+        then=Stop.BRAKE,
+        waiting=True,
+        accelerationPct=55,
     )
 
     br.moveLeftAttachmentMotorForMillis(millis=92, speedPct=-100)
     br.driveArcDist(
-        radius=450, dist=275, speedPct=100, then=Stop.NONE, waiting=True
+        radius=450,
+        dist=275,
+        speedPct=100,
+        then=Stop.NONE,
+        waiting=True,
+        accelerationPct=55,
     )
-    br.turnInPlace(angle=-20, speedPct=80)
+    br.turnInPlace(angle=-17, speedPct=80)
     br.driveArcDist(
-        radius=230, dist=110, speedPct=100, then=Stop.NONE, waiting=True
+        radius=230,
+        dist=95,
+        speedPct=100,
+        then=Stop.NONE,
+        waiting=True,
+        accelerationPct=55,
     )
     br.driveForDistance(
-        distance=140, speedPct=80, then=Stop.BRAKE, waiting=True
+        distance=121,
+        speedPct=80,
+        then=Stop.BRAKE,
+        waiting=True,
+        accelerationPct=55,
     )
 
     br.moveRightAttachmentMotorForMillis(millis=1250, speedPct=120)
@@ -50,22 +77,50 @@ def Run(br: BaseRobot):
     br.moveLeftAttachmentMotorForMillis(millis=90, speedPct=-100)
     br.moveRightAttachmentMotorForMillis(millis=1250, speedPct=-100)
     br.driveArcDist(
-        radius=-750, dist=135, speedPct=100, then=Stop.NONE, waiting=True
+        radius=-750,
+        dist=135,
+        speedPct=100,
+        then=Stop.NONE,
+        waiting=True,
+        accelerationPct=55,
     )
     br.driveForDistance(
-        distance=128, speedPct=100, then=Stop.BRAKE, waiting=True
+        distance=132,
+        speedPct=100,
+        then=Stop.BRAKE,
+        waiting=True,
+        accelerationPct=55,
     )
-    br.moveLeftAttachmentMotorForDegrees(degrees=90, speedPct=30)
+    br.moveLeftAttachmentMotorForDegrees(degrees=100, speedPct=15)
     br.driveForDistance(
-        distance=-120, speedPct=100, then=Stop.BRAKE, waiting=True
+        distance=-120,
+        speedPct=100,
+        then=Stop.BRAKE,
+        waiting=True,
+        accelerationPct=55,
     )
-    br.moveLeftAttachmentMotorForMillis(millis=170, speedPct=-20)
-    br.driveForDistance(distance=1, speedPct=100, then=Stop.NONE, waiting=True)
+    br.moveLeftAttachmentMotorForMillis(millis=245, speedPct=-20)
+    br.driveForDistance(
+        distance=1,
+        speedPct=100,
+        then=Stop.NONE,
+        waiting=True,
+        accelerationPct=55,
+    )
     br.driveArcDist(
-        radius=440, dist=300, speedPct=100, then=Stop.NONE, waiting=True
+        radius=460,
+        dist=300,
+        speedPct=100,
+        then=Stop.NONE,
+        waiting=True,
+        accelerationPct=40,
     )
     br.driveForDistance(
-        distance=600, speedPct=100, then=Stop.NONE, waiting=True
+        distance=800,
+        speedPct=100,
+        then=Stop.NONE,
+        waiting=True,
+        accelerationPct=100,
     )
 
 
