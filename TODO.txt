@@ -1,5 +1,5 @@
 TODO: Review code with Noah
-TODO: Team photo
+TODO: Team photo DONE
 TODO: Review questions from sample judging questions
 TODO: Note cards with extra comments - emphasize core values!
 TODO: Rewire and reprogram Robot Arm 
