@@ -45,8 +45,9 @@ def Run(br: BaseRobot):
         waiting=True,
         accelerationPct=48,
     )
-
+    # resetting the tray to make sure it is in the right position
     br.moveLeftAttachmentMotorForMillis(millis=92, speedPct=-100)
+    going to the next mission
     br.driveArcDist(
         radius=450,
         dist=275,
@@ -71,11 +72,14 @@ def Run(br: BaseRobot):
         waiting=True,
         accelerationPct=48,
     )
-
+    
+    #dropping the brick into the mission
     br.moveRightAttachmentMotorForMillis(millis=1100, speedPct=120)
     wait(690)
     br.moveLeftAttachmentMotorForMillis(millis=90, speedPct=-100)
     br.moveRightAttachmentMotorForMillis(millis=1100, speedPct=-100)
+    
+    #going to the next mission
     br.driveArcDist(
         radius=-675,
         dist=135,
@@ -91,6 +95,8 @@ def Run(br: BaseRobot):
         waiting=True,
         accelerationPct=48,
     )
+
+    #picking up the seed
     br.moveLeftAttachmentMotorForDegrees(degrees=100, speedPct=15)
     br.driveForDistance(
         distance=-120,
@@ -99,7 +105,10 @@ def Run(br: BaseRobot):
         waiting=True,
         accelerationPct=48,
     )
+
+    #resseting the tray
     br.moveLeftAttachmentMotorForMillis(millis=245, speedPct=-20)
+    #going to open the latch
     br.driveForDistance(
         distance=1,
         speedPct=100,
@@ -115,6 +124,8 @@ def Run(br: BaseRobot):
         waiting=True,
         accelerationPct=40,
     )
+
+    #drive to the zone
     br.driveForDistance(
         distance=800,
         speedPct=100,
