@@ -12,8 +12,40 @@ def Run(br: BaseRobot):
     # Your mission code goes here, step-by-step
     # It MUST be indented just like the lines below
 
-    # dfd
-    br.moveLeftAttachmentMotorForMillis(millis=150, speedPct=50)
+    # Reset the tray initially to make sure it is in the right position
+    br.moveLeftAttachmentMotorForMillis(millis=125, speedPct=100)
+    br.driveArcDist(
+        radius=158,
+        dist=135,
+        speedPct=100,
+        then=Stop.NONE,
+        waiting=True,
+        accelerationPct=55,
+    )
+
+    # Appoach the exploding seeds
+    br.driveForDistance(
+        distance=255,
+        speedPct=100,
+        then=Stop.BRAKE,
+        waiting=True,
+        accelerationPct=55,
+    )
+
+    # Raise the tray to pick up the exploding seeds
+    br.moveLeftAttachmentMotorForMillis(millis=145, speedPct=100)
+
+    br.driveArcDist(
+        radius=-280,
+        dist=-202,
+        speedPct=80,
+        then=Stop.BRAKE,
+        waiting=True,
+        accelerationPct=40,
+    )
+    br.driveForDistance(
+        distance=300, speedPct=80, then=Stop.NONE, waiting=True
+    )
 
 
 # Leave everything below here and don't type anything below this line
