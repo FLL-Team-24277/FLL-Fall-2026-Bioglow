@@ -13,7 +13,7 @@ def Run(br: BaseRobot):
     # It MUST be indented just like the lines below
 
     # Reset the tray initially to make sure it is in the right position
-    br.moveLeftAttachmentMotorForMillis(millis=125, speedPct=100)
+    br.moveLeftAttachmentMotorForMillis(millis=85, speedPct=100)
     br.driveArcDist(
         radius=158,
         dist=135,
@@ -33,18 +33,50 @@ def Run(br: BaseRobot):
     )
 
     # Raise the tray to pick up the exploding seeds
-    br.moveLeftAttachmentMotorForMillis(millis=145, speedPct=100)
+    br.moveLeftAttachmentMotorForMillis(millis=150, speedPct=100)
+
+    br.driveForDistance(
+        distance=-50, speedPct=80, then=Stop.NONE, waiting=True
+    )
 
     br.driveArcDist(
         radius=-280,
-        dist=-202,
+        dist=-152,
         speedPct=80,
         then=Stop.BRAKE,
         waiting=True,
-        accelerationPct=40,
+    )
+    br.moveLeftAttachmentMotorForMillis(millis=-150, speedPct=80)
+    br.driveForDistance(
+        distance=580,
+        speedPct=60,
+        then=Stop.BRAKE,
+        waiting=True,
+    )
+    br.moveRightAttachmentMotorForMillis(millis=1100, speedPct=120)
+    wait(300)
+    br.moveLeftAttachmentMotorForMillis(millis=230, speedPct=-30)
+    br.moveRightAttachmentMotorForMillis(
+        millis=1100, speedPct=-100, waiting=False
+    )
+    br.driveArcDist(
+        radius=-1720, dist=240, speedPct=80, then=Stop.BRAKE, waiting=True
+    )
+    br.moveLeftAttachmentMotorForDegrees(degrees=105, speedPct=15)
+    br.driveForDistance(
+        distance=-135, speedPct=80, then=Stop.BRAKE, waiting=True
+    )
+
+    br.moveLeftAttachmentMotorForDegrees(degrees=-51, speedPct=30)
+    br.driveArcDist(
+        radius=355, dist=250, speedPct=80, then=Stop.NONE, waiting=True
     )
     br.driveForDistance(
-        distance=300, speedPct=80, then=Stop.NONE, waiting=True
+        distance=600,
+        speedPct=80,
+        then=Stop.BRAKE,
+        waiting=True,
+        accelerationPct=80,
     )
 
 
