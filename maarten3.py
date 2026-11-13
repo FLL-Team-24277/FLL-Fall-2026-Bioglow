@@ -12,8 +12,72 @@ def Run(br: BaseRobot):
     # Your mission code goes here, step-by-step
     # It MUST be indented just like the lines below
 
-    # dfd
-    br.moveLeftAttachmentMotorForMillis(millis=150, speedPct=50)
+    # Reset the tray initially to make sure it is in the right position
+    br.moveLeftAttachmentMotorForMillis(millis=85, speedPct=100)
+    br.driveArcDist(
+        radius=158,
+        dist=135,
+        speedPct=100,
+        then=Stop.NONE,
+        waiting=True,
+        accelerationPct=55,
+    )
+
+    # Appoach the exploding seeds
+    br.driveForDistance(
+        distance=255,
+        speedPct=100,
+        then=Stop.BRAKE,
+        waiting=True,
+        accelerationPct=55,
+    )
+
+    # Raise the tray to pick up the exploding seeds
+    br.moveLeftAttachmentMotorForMillis(millis=150, speedPct=100)
+
+    br.driveForDistance(
+        distance=-50, speedPct=80, then=Stop.NONE, waiting=True
+    )
+
+    br.driveArcDist(
+        radius=-280,
+        dist=-152,
+        speedPct=80,
+        then=Stop.BRAKE,
+        waiting=True,
+    )
+    br.moveLeftAttachmentMotorForMillis(millis=-150, speedPct=80)
+    br.driveForDistance(
+        distance=580,
+        speedPct=60,
+        then=Stop.BRAKE,
+        waiting=True,
+    )
+    br.moveRightAttachmentMotorForMillis(millis=1100, speedPct=120)
+    wait(300)
+    br.moveLeftAttachmentMotorForMillis(millis=230, speedPct=-30)
+    br.moveRightAttachmentMotorForMillis(
+        millis=1100, speedPct=-100, waiting=False
+    )
+    br.driveArcDist(
+        radius=-1720, dist=240, speedPct=80, then=Stop.BRAKE, waiting=True
+    )
+    br.moveLeftAttachmentMotorForDegrees(degrees=105, speedPct=15)
+    br.driveForDistance(
+        distance=-135, speedPct=80, then=Stop.BRAKE, waiting=True
+    )
+
+    br.moveLeftAttachmentMotorForDegrees(degrees=-51, speedPct=30)
+    br.driveArcDist(
+        radius=355, dist=250, speedPct=80, then=Stop.NONE, waiting=True
+    )
+    br.driveForDistance(
+        distance=600,
+        speedPct=80,
+        then=Stop.BRAKE,
+        waiting=True,
+        accelerationPct=80,
+    )
 
 
 # Leave everything below here and don't type anything below this line
