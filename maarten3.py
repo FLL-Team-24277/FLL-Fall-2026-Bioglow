@@ -20,7 +20,7 @@ def Run(br: BaseRobot):
         speedPct=100,
         then=Stop.NONE,
         waiting=True,
-        accelerationPct=55,
+        accelerationPct=35,
     )
 
     # Appoach the exploding seeds
@@ -29,7 +29,7 @@ def Run(br: BaseRobot):
         speedPct=100,
         then=Stop.BRAKE,
         waiting=True,
-        accelerationPct=55,
+        accelerationPct=35,
     )
 
     # Raise the tray to pick up the exploding seeds
@@ -60,7 +60,7 @@ def Run(br: BaseRobot):
         millis=1100, speedPct=-100, waiting=False
     )
     br.driveArcDist(
-        radius=6720, dist=240, speedPct=80, then=Stop.BRAKE, waiting=True
+        radius=-1780, dist=240, speedPct=80, then=Stop.BRAKE, waiting=True
     )
     br.moveLeftAttachmentMotorForDegrees(degrees=105, speedPct=15)
     br.driveForDistance(
@@ -68,8 +68,9 @@ def Run(br: BaseRobot):
     )
 
     br.moveLeftAttachmentMotorForDegrees(degrees=-51, speedPct=30)
+    br.driveForDistance(distance=30, speedPct=80, then=Stop.NONE, waiting=True)
     br.driveArcDist(
-        radius=335, dist=250, speedPct=80, then=Stop.NONE, waiting=True
+        radius=340, dist=225, speedPct=80, then=Stop.NONE, waiting=True
     )
     br.driveForDistance(
         distance=600,
