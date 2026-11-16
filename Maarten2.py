@@ -15,14 +15,14 @@ def Run(br: BaseRobot):
     # dfd
 
     # Reset the tray initially to make sure it is in the right position
-    br.moveLeftAttachmentMotorForMillis(millis=110, speedPct=100)
+    br.moveLeftAttachmentMotorForMillis(millis=105, speedPct=100)
     br.driveArcDist(
         radius=158,
         dist=135,
         speedPct=100,
         then=Stop.NONE,
         waiting=True,
-        accelerationPct=60,
+        accelerationPct=55,
     )
 
     # Appoach the exploding seeds
@@ -31,96 +31,91 @@ def Run(br: BaseRobot):
         speedPct=100,
         then=Stop.BRAKE,
         waiting=True,
-        accelerationPct=60,
+        accelerationPct=55,
     )
 
     # Raise the tray to pick up the exploding seeds
     br.moveLeftAttachmentMotorForMillis(millis=145, speedPct=100)
 
-    # Backup after picking up the exploding seeds
     br.driveForDistance(
-        distance=-210,
-        speedPct=100,
-        then=Stop.BRAKE,
-        waiting=True,
-        accelerationPct=60,
+        distance=-50, speedPct=80, then=Stop.NONE, waiting=True
     )
 
-    br.moveLeftAttachmentMotorForMillis(millis=92, speedPct=-100)
     br.driveArcDist(
-        radius=450,
-        dist=275,
-        speedPct=100,
-        then=Stop.NONE,
-        waiting=True,
-        accelerationPct=60,
-    )
-    br.turnInPlace(angle=-20, speedPct=80)
-    br.driveArcDist(
-        radius=230,
-        dist=110,
-        speedPct=100,
-        then=Stop.NONE,
-        waiting=True,
-        accelerationPct=60,
-    )
-    br.driveForDistance(
-        distance=140,
+        radius=-280,
+        dist=-152,
         speedPct=80,
         then=Stop.BRAKE,
         waiting=True,
-        accelerationPct=60,
+        accelerationPct=40,
     )
-
-    br.moveRightAttachmentMotorForMillis(millis=1250, speedPct=120)
+    br.moveLeftAttachmentMotorForMillis(millis=-145, speedPct=80)
+    br.driveForDistance(
+        distance=620,
+        speedPct=60,
+        then=Stop.BRAKE,
+        waiting=True,
+        accelerationPct=45,
+    )
+    # dropping the brick into the mission
+    br.moveRightAttachmentMotorForMillis(millis=1100, speedPct=120)
     wait(690)
     br.moveLeftAttachmentMotorForMillis(millis=90, speedPct=-100)
-    br.moveRightAttachmentMotorForMillis(millis=1250, speedPct=-100)
+    br.moveRightAttachmentMotorForMillis(millis=1100, speedPct=-100)
+
+    # going to the next mission
     br.driveArcDist(
-        radius=-800,
+        radius=-675,
         dist=135,
         speedPct=100,
         then=Stop.NONE,
         waiting=True,
-        accelerationPct=60,
+        accelerationPct=48,
     )
     br.driveForDistance(
-        distance=128,
+        distance=132,
         speedPct=100,
         then=Stop.BRAKE,
         waiting=True,
-        accelerationPct=60,
+        accelerationPct=48,
     )
-    br.moveLeftAttachmentMotorForDegrees(degrees=90, speedPct=15)
+
+    # picking up the seed
+    br.moveLeftAttachmentMotorForDegrees(degrees=100, speedPct=15)
     br.driveForDistance(
         distance=-120,
         speedPct=100,
         then=Stop.BRAKE,
         waiting=True,
-        accelerationPct=60,
+        accelerationPct=48,
     )
-    br.moveLeftAttachmentMotorForMillis(millis=170, speedPct=-20)
+
+    # resseting the tray
+    br.moveLeftAttachmentMotorForMillis(millis=245, speedPct=-20)
+    # going to open the latch
     br.driveForDistance(
         distance=1,
         speedPct=100,
         then=Stop.NONE,
         waiting=True,
-        accelerationPct=60,
+        accelerationPct=48,
     )
     br.driveArcDist(
-        radius=440,
+        radius=450,
         dist=300,
         speedPct=100,
         then=Stop.NONE,
         waiting=True,
-        accelerationPct=60,
+        accelerationPct=40,
     )
+
+    # drive to the zone
     br.driveForDistance(
-        distance=600,
+        distance=800,
         speedPct=100,
         then=Stop.NONE,
         waiting=True,
-        accelerationPct=60,
+        accelerationPct=100,
     )
 
 
