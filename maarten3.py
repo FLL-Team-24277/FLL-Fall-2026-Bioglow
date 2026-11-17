@@ -33,7 +33,7 @@ def Run(br: BaseRobot):
     )
 
     # Raise the tray to pick up the exploding seeds
-    br.moveLeftAttachmentMotorForMillis(millis=150, speedPct=100)
+    br.moveLeftAttachmentMotorForMillis(millis=190, speedPct=100)
 
     br.driveForDistance(
         distance=-50, speedPct=80, then=Stop.NONE, waiting=True
@@ -46,7 +46,7 @@ def Run(br: BaseRobot):
         then=Stop.BRAKE,
         waiting=True,
     )
-    br.moveLeftAttachmentMotorForMillis(millis=-120, speedPct=80)
+    br.moveLeftAttachmentMotorForMillis(millis=-160, speedPct=80)
     br.driveForDistance(
         distance=580,
         speedPct=50,
@@ -62,15 +62,15 @@ def Run(br: BaseRobot):
     br.driveForDistance(
         distance=240, speedPct=80, then=Stop.BRAKE, waiting=True
     )
-    br.moveLeftAttachmentMotorForDegrees(degrees=105, speedPct=15)
+    br.moveLeftAttachmentMotorForDegrees(degrees=105, speedPct=7)
     br.driveForDistance(
         distance=-135, speedPct=80, then=Stop.BRAKE, waiting=True
     )
 
-    br.moveLeftAttachmentMotorForDegrees(degrees=-56, speedPct=30)
+    br.moveLeftAttachmentMotorForDegrees(degrees=-70, speedPct=30)
     br.driveForDistance(distance=30, speedPct=80, then=Stop.NONE, waiting=True)
     br.driveArcDist(
-        radius=225, dist=180, speedPct=80, then=Stop.NONE, waiting=True
+        radius=225, dist=160, speedPct=80, then=Stop.NONE, waiting=True
     )
     br.driveForDistance(
         distance=600,
