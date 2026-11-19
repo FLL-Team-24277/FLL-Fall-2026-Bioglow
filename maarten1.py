@@ -14,10 +14,8 @@ def Run(br: BaseRobot):
 
     # dfd
 
-    br.moveRightAttachmentMotorForMillis(millis=1000, speedPct=80)
-    wait(1000)
-    br.driveArcDist(
-        radius=-830, dist=300, speedPct=80, then=Stop.BRAKE, waiting=True
+    br.driveForDistance(
+        distance=500, speedPct=80, then=Stop.BRAKE, waiting=True
     )
 
 
